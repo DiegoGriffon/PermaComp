@@ -7,7 +7,9 @@ The function requires the following libraries: dplyr, vegan, rcompanion.
 The function provides p-values and adjusted p-values for pairwise comparisons, as well as results in Compact Letter Display (CLD) format.
 
 The function allows you to set the desired significance level (alpha) and the type of adjustment to be made. 
-These are set using the arguments Alpha = value, Adj = "option". The options for p-value adjustments are:
+These are set using the arguments Alpha = value, Adj = "option". 
+
+The options for p-value adjustments are:
 
 •	Dunn (1961) (“bonferroni”)
 
@@ -20,7 +22,6 @@ These are set using the arguments Alpha = value, Adj = "option". The options for
 •	Benjamini & Hochberg (1995) (“BH”)
 
 •	Benjamini & Yekutieli (2001) (“BY”)
-
 
 By default, these arguments are set as follows: Alpha = 0.05,  Adj = "bonferroni".
 
