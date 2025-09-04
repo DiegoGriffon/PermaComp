@@ -40,8 +40,6 @@ PermaComp2 <- function(Dat, Y, X, Adj = "bonferroni", Alpha = 0.05){
       set.seed(73)
       Perma <- adonis2(DataComp$Response ~ DataComp$Factor,
                       permutations = 999, method = "euclidean")
-      
-      # Correct way to get the p-value from adonis2 output
       Pvalor <- Perma$`Pr(>F)`[1]
       Table$P_Value[i] <- Pvalor
     }
