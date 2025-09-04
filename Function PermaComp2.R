@@ -8,7 +8,7 @@ PermaComp2 <- function(Dat, Y, X, Adj = "bonferroni", Alpha = 0.05){
   # Data set manipulation
   Data = as.data.frame(Dat)
   
-  # A simpler way to get the variable names from the function arguments
+  # To get the variable names from the function arguments
   Response_var_name <- as.character(substitute(Y))
   Factor_var_name <- as.character(substitute(X))
   
