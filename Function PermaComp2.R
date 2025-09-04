@@ -38,8 +38,6 @@ PermaComp2 <- function(Dat, Y, X, Adj = "bonferroni", Alpha = 0.05){
       VariationCounter = VariationCounter + 1
     } else {
       set.seed(73)
-      # Use adonis2 and correctly extract the p-value
-      # The key change is here:
       Perma <- adonis2(DataComp$Response ~ DataComp$Factor,
                       permutations = 999, method = "euclidean")
       
