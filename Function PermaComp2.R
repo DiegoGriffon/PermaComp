@@ -31,7 +31,7 @@ PermaComp2 <- function(Dat,Y, X, Adj = "bonferroni", Alpha = 0.05){
                         Factor == Combinations[1,i] | Factor == Combinations[2,i])
     DataComp <- na.omit(DataComp) # Remove NAs
     
-    # It is checked if the comparison presents variation (if does not, 1 is assigned to the P_Value). Otherwise adonis command gives an error
+    # It is checked if the comparison presents variation (if does not, 1 is assigned to the P_Value). Otherwise adonis2 command gives an error
     if (max(DataComp$Response) - min(DataComp$Response) == 0) {
       Table$P_Value[i]<- 1
       VariationCounter = VariationCounter + 1
